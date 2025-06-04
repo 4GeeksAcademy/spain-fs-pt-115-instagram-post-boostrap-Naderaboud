@@ -1,0 +1,15 @@
+body {
+      font-family: 'awesome';
+}
+
+.page-title  {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.page-title i, h3 {
+    padding: 3px;
+    font-size: large;
+    font-weight:200;
+}
