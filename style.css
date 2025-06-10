@@ -62,11 +62,30 @@ h3 {
 .card-head {
   display: flex;
   width: 100%;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+
   flex-direction: row;
 }
 
 .card-head h4 {
   display: flex;
   align-self: center;
-padding-left: 83%;
+  justify-self: flex-end;
+}
+
+.form-floating {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form-floating  label{
+  padding-left: 20px;
+}
+.text-area-title {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.modal-option-buttons {
+  padding: 10px;
 }
