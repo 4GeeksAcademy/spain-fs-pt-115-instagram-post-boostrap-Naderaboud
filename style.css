@@ -31,9 +31,8 @@ h3 {
 
 /* ✅ NO uses flex aquí — Bootstrap gestiona el grid */
 #photo-container {
-  display: flex;
+  justify-self: center;
   width: 100%;
-  padding: 20px;
 }
 
 /* ✅ Asegúrate que las columnas funcionen normalmente */
@@ -79,13 +78,22 @@ h3 {
   padding-left: 10px;
   padding-right: 10px;
 }
-.form-floating  label{
+
+.form-floating label {
   padding-left: 20px;
 }
+
 .text-area-title {
   padding-left: 10px;
   padding-top: 10px;
 }
+
 .modal-option-buttons {
   padding: 10px;
 }
+
+.photo-with-info {
+  width: 80%;
+  justify-self: center;
+}
+
