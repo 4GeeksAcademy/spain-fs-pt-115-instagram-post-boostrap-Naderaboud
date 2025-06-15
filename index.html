@@ -15,18 +15,23 @@
   <script>
     function setGridView() {
       document.querySelectorAll('.photo-item').forEach(item => {
-        item.classList.remove('col-12');
         item.classList.add('col-md-4');
+        item.classList.add('col-sm-6');
+        item.classList.add('mb-3');
+
 
         item.querySelector('.photo-image-only').classList.remove('d-none');
         item.querySelector('.photo-with-info').classList.add('d-none');
       });
+
     }
 
     function setListView() {
       document.querySelectorAll('.photo-item').forEach(item => {
         item.classList.remove('col-md-4');
-        item.classList.add('col-12');
+        item.classList.remove('col-sm-6');
+        item.classList.remove('mb-3');
+
 
         item.querySelector('.photo-image-only').classList.add('d-none');
         item.querySelector('.photo-with-info').classList.remove('d-none');
@@ -37,7 +42,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mx-auto">
     <div class="container-fluid">
       <div class="page-title">
         <i class="fa-brands fa-instagram"></i>
@@ -110,7 +115,7 @@
 
   <div id="photo-container" class="row">
 
-    <div class="col-md-4 mb-3 photo-item">
+    <div class="col-12 col-sm-6 col-md-4 mb-3 photo-item">
       <!-- Solo imagen -->
       <div class="photo-image-only">
         <div class="photo-square">
@@ -142,7 +147,7 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-3 photo-item">
+    <div class="col-12 col-sm-6 col-md-4 mb-3 photo-item">
       <!-- Solo imagen -->
       <div class="photo-image-only">
         <div class="photo-square">
@@ -173,7 +178,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-3 photo-item">
+    <div class="col-12 col-sm-6 col-md-4 mb-3 photo-item">
       <!-- Solo imagen -->
       <div class="photo-image-only">
         <div class="photo-square">
@@ -205,7 +210,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-3 photo-item">
+    <div class="col-12 col-sm-6 col-md-4 mb-3 photo-item">
       <!-- Solo imagen -->
       <div class="photo-image-only">
         <div class="photo-square">
@@ -236,37 +241,37 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-3 photo-item">
-      <!-- Solo imagen -->
-      <div class="photo-image-only">
-        <div class="photo-square">
-          <img src="https://clasica1025.com/wp-content/uploads/2023/11/Rick-Astley.jpg" alt="Foto 2">
-        </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-3 photo-item">
+    <!-- Solo imagen -->
+    <div class="photo-image-only">
+      <div class="photo-square">
+        <img src="https://clasica1025.com/wp-content/uploads/2023/11/Rick-Astley.jpg" alt="Foto 2">
       </div>
+    </div>
 
-      <!-- Imagen + info -->
-      <div class="photo-with-info d-none">
-        <div class="card">
-          <div class="card-head">
-            <p class="text-start">Título</p>
-            <p class="text-end">20/20/20</p>
-          </div>
-          <div class="photo-square">
-            <img src="https://clasica1025.com/wp-content/uploads/2023/11/Rick-Astley.jpg" class="card-img-top"
-              alt="Foto 2">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><strong>321 Likes</strong></h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-              leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-              the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-              software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
+    <!-- Imagen + info -->
+    <div class="photo-with-info d-none">
+      <div class="card">
+        <div class="card-head">
+          <p class="text-start">Título</p>
+          <p class="text-end">20/20/20</p>
+        </div>
+        <div class="photo-square">
+          <img src="https://clasica1025.com/wp-content/uploads/2023/11/Rick-Astley.jpg" class="card-img-top"
+            alt="Foto 2">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong>321 Likes</strong></h5>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+            the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
       </div>
     </div>
+  </div>
 
   </div>
 
